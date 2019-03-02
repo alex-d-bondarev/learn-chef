@@ -9,6 +9,6 @@ Added for QAOps [presentation](https://docs.google.com/presentation/d/1Bz0TQVtgx
 
 ## Steps that were run in order to get the [example](./example)
 
-1. `chef generate cookbook example`. 
-1. \[Alternative for tests #1] create example folder and run `kitchen init` there.
-1. \[Alternative for tests #2] create example folder and run `chef exec rspec init` there.
+1. `chef generate cookbook mydatabase`. 
+1. \[Alternative for tests #1] create mydatabase folder and run `kitchen init` there.
+1. \[Alternative for tests #2] create mydatabase folder and run `chef exec rspec init` there.

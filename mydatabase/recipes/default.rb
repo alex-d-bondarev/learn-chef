@@ -6,9 +6,9 @@
 
 apt_update 'update'
 
-package 'postgresql'
+package node['mydatabase']['package_name']
 
-service 'postgresql' do
+service node['mydatabase']['service_name'] do
   action [:start, :enable]
 end
 
@@ -17,12 +17,12 @@ execute 'createdb roux_artists' do
   not_if 'psql --dbname=roux_artists'
 end
 
-template '/etc/postgresql/9.5/main/pg_hba.conf' do
+template node['mydatabase']['template_path'] do
   source 'pg_hba_ubuntu.conf.erb'
   variables(
       database_user: 'database_user'
   )
-  notifies :reload, 'service[postgresql]', :immediately
+  notifies :reload, "service[#{node['mydatabase']['service_name']}]", :immediately
 end
 
 execute "psql roux_artists -c \"CREATE ROLE database_user PASSWORD 'user_password' SUPERUSER LOGIN; \"" do

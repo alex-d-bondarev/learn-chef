@@ -24,3 +24,8 @@ template '/etc/postgresql/9.5/main/pg_hba.conf' do
   )
   notifies :reload, 'service[postgresql]', :immediately
 end
+
+execute "psql roux_artists -c \"CREATE ROLE database_user PASSWORD 'user_password' SUPERUSER LOGIN; \"" do
+  user 'postgres'
+  not_if "psql -c '\\du' | grep database_user"
+end

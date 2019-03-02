@@ -7,8 +7,26 @@ Added for QAOps [presentation](https://docs.google.com/presentation/d/1Bz0TQVtgx
 1. Install Vagrant from [this link](https://www.vagrantup.com/)
 1. Install Virtualbox from [this link](https://www.virtualbox.org/wiki/Downloads)
 
-## Steps that were run in order to get the [example](./example)
+## Steps that were run in order to get the [mydatabase](./mydatabase)
 
 1. `chef generate cookbook mydatabase`. 
 1. \[Alternative for tests #1] create mydatabase folder and run `kitchen init` there.
 1. \[Alternative for tests #2] create mydatabase folder and run `chef exec rspec init` there.
+
+## Verify kitchen (set up/verified/etc.)
+
+1. `cd mydatabase/`
+1. `kitchen list`
+**Expected:** No errors
+
+## Run tests
+
+1. \[Optional] `kitchen converge` - redeploy cookbook after recipe changes to run kitchen correctly
+1. \[Optional] `kitchen login` - verify setup manually
+1. `kitchen verify` - create VM, deploy cookbook and run inspec tests
+
+## Investigate inspec resources
+
+1. `inspec shell`
+1. `help <resource_name>` (For example: `help postgres_session`)
+1. Copy and update example

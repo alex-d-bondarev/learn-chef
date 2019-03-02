@@ -13,20 +13,32 @@ Added for QAOps [presentation](https://docs.google.com/presentation/d/1Bz0TQVtgx
 1. \[Alternative for tests #1] create mydatabase folder and run `kitchen init` there.
 1. \[Alternative for tests #2] create mydatabase folder and run `chef exec rspec init` there.
 
-## Verify kitchen (set up/verified/etc.)
+## Unit tests
+
+Unit tests run in memory without deploying recipe to VM
+
+### Run tests
+
+1. `chef exec rspec` - quick run
+1. `chef exec rspec --format documentation` - with details
+
+## Integration tests
+
+Integration tests run against VM with deployed recipe.
+
+### Verify kitchen (set up/verified/etc.)
 
 1. `cd mydatabase/`
 1. `kitchen list`
 **Expected:** No errors
 
-## Run tests
+### Run tests
 
 1. \[Optional] `kitchen converge` - redeploy cookbook after recipe changes to run kitchen correctly
 1. \[Optional] `kitchen login` - verify setup manually
 1. `kitchen verify` - create VM, deploy cookbook and run inspec tests
 
-## Investigate inspec resources
+### Investigate inspec resources
 
 1. `inspec shell`
 1. `help <resource_name>` (For example: `help postgres_session`)
-1. Copy and update example

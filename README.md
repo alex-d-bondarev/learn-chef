@@ -3,7 +3,7 @@ Added for QAOps [presentation](https://docs.google.com/presentation/d/1Bz0TQVtgx
 
 ## Preconditions
 
-1. Install chefDK from [this link](https://downloads.chef.io/chefdk/stable/)
+1. Install chefDK from [this link](https://downloads.chef.io/chefdk/stable/) (these examples were implemented for chef 3.0.36 version)
 1. Install Vagrant from [this link](https://www.vagrantup.com/)
 1. Install Virtualbox from [this link](https://www.virtualbox.org/wiki/Downloads)
 

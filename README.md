@@ -1,4 +1,7 @@
 # learn-chef
+
+You can copy and reuse code [![MIT License](http://img.shields.io/badge/license-MIT-green.svg)](https://github.com/selenide/selenide/blob/master/LICENSE)
+
 Added for QAOps [presentation](https://docs.google.com/presentation/d/1Bz0TQVtgx93XDXwBTPgPtaufhDMom7q_4hrNiiMxmcg/edit?usp=sharing)
 
 ## Preconditions

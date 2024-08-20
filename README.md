@@ -1,7 +1,7 @@
 # learn-chef
 
 > [!NOTE]  
-> **Archived** since I have learned what I planned to an no longer plan to commit new changes
+> **Archived** since I have learned what I planned to and no longer plan to commit new changes
 
 You can copy and reuse code [![MIT License](http://img.shields.io/badge/license-MIT-green.svg)](https://github.com/selenide/selenide/blob/master/LICENSE)
 

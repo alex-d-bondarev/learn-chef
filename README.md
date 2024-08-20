@@ -1,5 +1,8 @@
 # learn-chef
 
+> [!NOTE]  
+> **Archived** since I have learned what I planned to an no longer plan to commit new changes
+
 You can copy and reuse code [![MIT License](http://img.shields.io/badge/license-MIT-green.svg)](https://github.com/selenide/selenide/blob/master/LICENSE)
 
 Added for QAOps [presentation](https://docs.google.com/presentation/d/1Bz0TQVtgx93XDXwBTPgPtaufhDMom7q_4hrNiiMxmcg/edit?usp=sharing)
